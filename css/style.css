@@ -449,6 +449,7 @@ footer li {
 
   #ville {
     height: 62px;
+    width: 270px;
     border-left: none;
     z-index: 1;
   }
@@ -479,14 +480,14 @@ footer li {
 
   .filtre .buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     transform: scale(1.03);
   }
 
   .filtre button {
-    width: 127px;
+    width: 143px;
   }
 
   .hebergements-and-populaires {
