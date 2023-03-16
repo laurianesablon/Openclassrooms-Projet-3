@@ -409,6 +409,10 @@ footer li {
   header nav a {
     padding: 20px;
   }
+
+  .main-container{
+    padding: 0 20px;
+  }
   .blue {
     border-bottom: 2px solid #0065fc;
   }
@@ -506,7 +510,7 @@ footer li {
   }
 
   .populaires-cards .card {
-    width: 100%;
+    width: 98%;
   }
   .hebergements-and-populaires section {
     margin-bottom: 20px;
@@ -514,7 +518,6 @@ footer li {
   }
 
   #hebergements .section-title h3 {
-    padding-left: 20px;
   }
 
   #hebergements {
@@ -528,6 +531,7 @@ footer li {
 
   #hebergements .card {
     width: 100%;
+    margin-bottom: 15px;
   }
 
   #activite {
