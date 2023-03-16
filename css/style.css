@@ -410,13 +410,17 @@ footer li {
     padding: 20px;
   }
   .blue {
-    border-top: #fff;
     border-bottom: 2px solid #0065fc;
+  }
+  .blue:hover {
+    border-top: none;
   }
 
   .right {
     border-bottom: #fff;
   }
+
+
   .left {
     color: var(--main-color);
   }
