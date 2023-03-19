@@ -3,6 +3,9 @@
   font-family: "Raleway", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
@@ -517,8 +520,6 @@ footer li {
     border-radius: 0px;
   }
 
-  #hebergements .section-title h3 {
-  }
 
   #hebergements {
     background-color: white;
