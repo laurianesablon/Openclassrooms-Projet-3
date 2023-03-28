@@ -52,6 +52,8 @@ nav a {
   padding: 20px;
   color: black;
   text-decoration: none;
+  border-top: 2px solid white;
+
 }
 
 nav a:hover {
@@ -72,7 +74,8 @@ button .loc {
 .loc {
   justify-content: center;
   align-items: center;
-  height: 42px;
+  height: 49px;
+  width: 50px;
   background-color: var(--main-bg-color);
   border: 1px solid var(--main-bg-color);
   border-radius: 10px 0px 0px 10px;
@@ -85,16 +88,18 @@ button .loc {
 }
 
 #ville {
-  height: 38px;
+  height: 45px;
   border: 1px solid var(--main-bg-color);
 }
 
 .rechercher {
-  height: 42px;
+  height: 49px;
+  width: 132px;
   background-color: var(--main-color);
-  border: 1px solid var(--main-bg-color);
+  border: none;
   border-radius: 0px 10px 10px 0px;
   color: white;
+  margin-left: 0px;
 }
 
 .btn2 {
@@ -111,6 +116,10 @@ button .loc {
   gap: 15px;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.filtre p {
+font-weight: 700;
 }
 
 .filtre button {
@@ -136,11 +145,10 @@ button .loc {
 
 .filtre button:hover {
   background-color: #deebff;
-  transform: scale(1.03);
-  transition: transform 0.1s ease-in-out;
+
 }
 
-.filtre button i {
+.filtre  i {
   font-size: 22px;
 }
 .nbr {
@@ -148,12 +156,15 @@ button .loc {
   gap: 10px;
   align-items: center;
 }
-.nbr button {
+.nbr i {
   border-radius: 50%;
   border: 1px solid var(--main-bg-color);
   background-color: white;
   height: 24px;
   width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #hebergements .section-title {
@@ -171,6 +182,7 @@ button .loc {
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   transition: transform 0.2s ease-in-out;
+  margin-bottom: 10px;
 }
 .card:hover {
   transform: scale(1.03);
@@ -212,7 +224,6 @@ button .loc {
 
 .hebergements-cards .card {
   width: 29%;
-  min-width: 234px;
 }
 .hebergements-cards {
   display: flex;
@@ -296,7 +307,6 @@ button .loc {
 }
 
 #activite .card h3 {
-  padding: 0px 25px;
   font-size: 1.2em;
   margin: 10px;
 }
@@ -309,15 +319,15 @@ footer {
   margin-top: 40px;
   background-color: var(--main-bg-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-ul {
-  list-style-type: none;
-}
-footer nav {
+footer ul {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
+  padding-left: 0px;
+
 }
 footer .nav__title {
   font-size: 18px;
@@ -327,7 +337,7 @@ footer .nav__title {
 footer li {
   font-size: 16px;
   font-weight: 400;
-  padding: 10px;
+  padding: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -344,14 +354,15 @@ footer li {
 
   #activite .card {
     padding-bottom: 57px;
+    height: 270px;
   }
 
   .hebergements-cards .card {
-    width: 31%;
+    width: 30%;
   }
 }
 
-@media (max-width: 1453px) and (min-width: 1024px) {
+/*@media (max-width: 1453px) and (min-width: 1024px) {
   .hebergements-cards .card {
     width: 45%;
   }
@@ -359,6 +370,9 @@ footer li {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .form {
+    margin-top: 20px;
+  }
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -379,7 +393,7 @@ footer li {
   }
 
   .populaires-cards .card {
-    width: 30%;
+    width: 31%;
   }
 
   .populaires-cards .card-title {
@@ -388,12 +402,6 @@ footer li {
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
-  }
-}
-
-@media (max-width: 951px) {
-  .hebergements-cards .card {
-    width: 45%;
   }
 }
 
@@ -416,20 +424,13 @@ footer li {
   .main-container{
     padding: 0 20px;
   }
-  .blue {
-    border-bottom: 2px solid #0065fc;
-  }
+
   .blue:hover {
-    border-top: none;
+
   }
 
   .right {
     border-bottom: #fff;
-  }
-
-
-  .left {
-    color: var(--main-color);
   }
 
   .logo {
@@ -452,26 +453,28 @@ footer li {
   }
 
   .loc {
-    height: 66px;
-    width: 66px;
+    height: 49px;
+    width: 49px;
     display: flex;
     align-items: center;
   }
 
   #ville {
-    height: 62px;
+    height: 45px;
     width: 270px;
     border-left: none;
     z-index: 1;
+    border-right: none;
   }
 
   .btn2 {
     display: block;
+    z-index:2;
     color: #0065fc;
-    width: 82px;
-    height: 66px;
+    width: 49px;
+    height: 49px;
     background-color: var(--main-color);
-    border: 1px solid var(--main-bg-color);
+    border-radius: 10px 10px 10px 10px;
   }
 
   .form__loupe {
@@ -545,7 +548,6 @@ footer li {
   }
 
   #activite .card h3 {
-    padding: 0px 25px;
     font-size: 17px;
     margin-top: 10px;
   }
