@@ -60,7 +60,7 @@ nav a:hover {
   color: var(--main-color);
 }
 
-.form {
+form {
   display: flex;
   align-items: center;
   margin-top: 100px;
@@ -86,6 +86,10 @@ button .loc {
   font-size: 20px;
 }
 
+.fa-magnifying-glass {
+  display: none;
+}
+
 #ville {
   height: 45px;
   border: 1px solid var(--main-bg-color);
@@ -101,11 +105,9 @@ button .loc {
   border: none;
   border-radius: 0px 10px 10px 0px;
   color: white;
-  margin-left: 0px;
-}
-
-.btn2 {
-  display: none;
+  font-weight: 700;
+  font-size: 18px;
+  
 }
 
 .btn2 i {
@@ -240,6 +242,16 @@ button .loc {
   border-top-right-radius: 20px;
 }
 
+#hebergements .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px 15px 15px 15px;
+}
+
+#hebergements .card-content > * {
+  margin: 0;
+}
 /****** Populaires ***********/
 .populaires {
   width: 32%;
@@ -294,6 +306,7 @@ button .loc {
 #activite .card {
   width: 25%;
   height: 439px;
+  padding: 0;
 }
 
 #activite .card-content {
@@ -329,17 +342,18 @@ footer ul {
   flex-direction: column;
   list-style-type: none;
   padding-left: 0px;
+  width: 33%;
 }
 footer .nav__title {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 7.5px;
   font-weight: 700;
 }
 
 footer li {
   font-size: 16px;
   font-weight: 400;
-  padding: 15px;
+  padding: 7.5px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -400,8 +414,6 @@ footer li {
     font-size: 13px;
   }
 
-
-
   #activite img {
     height: 200px;
   }
@@ -432,9 +444,6 @@ footer li {
     padding: 0 20px;
   }
 
-  .blue:hover {
-  }
-
   .right {
     border-bottom: #fff;
   }
@@ -461,7 +470,6 @@ footer li {
   .loc {
     height: 49px;
     width: 49px;
-    display: flex;
     align-items: center;
   }
 
@@ -474,11 +482,9 @@ footer li {
   }
 
   .btn2 {
-    display: block;
     z-index: 2;
-    color: #0065fc;
+    color: #fff;
     width: 49px;
-    height: 49px;
     background-color: var(--main-color);
     border-radius: 10px 10px 10px 10px;
   }

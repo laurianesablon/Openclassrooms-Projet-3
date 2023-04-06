@@ -40,18 +40,24 @@
           <p>En plein centre-ville ou en pleine nature</p>
         </section>
         <section class="form">
-          <button class="loc">
+          
+          <form class="ville" method="get">
+            <button class="loc">
             <i class="fa-solid fa-location-dot black"></i>
           </button>
-          <form class="ville" method="get">
-            <input type="text" placeholder="Marseille, France" name="ville" id="ville">
-            <input type="submit" value="Rechercher" class="btn1 rechercher">
-
+            <input
+              type="text"
+              placeholder="Marseille, France"
+              name="ville"
+              id="ville"
+            />
+          
+            <button class="rechercher" type="submit">
+              <!--Comment je fais pour ajouter ce bouton à mon form mais en gardant la loupe-->
+              <span class="btn1">Rechercher</span>
+              <i class="fa-solid fa-magnifying-glass white btn2"></i>
+            </button>
           </form>
-
-          <button class="rechercher btn2">
-            <i class="fa-solid fa-magnifying-glass white"></i>
-          </button>
         </section>
 
         <section class="filtre">
@@ -80,12 +86,10 @@
                   alt="Image de la chambre d'hôtel montrant un lit"
                 />
                 <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">Hôtel du port</h3>
-                    <p class="card-subtitle">
-                      Nuit à partir de 52<span class="euro">€</span>
-                    </p>
-                  </div>
+                  <h3 class="card-title">Hôtel du port</h3>
+                  <p class="card-subtitle">
+                    Nuit à partir de 52<span class="euro">€</span>
+                  </p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -106,12 +110,10 @@
                   alt="Image de la chambre d'hôtel montrant un lit"
                 />
                 <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">Hôtel Chez Amina</h3>
-                    <p class="card-subtitle">
-                      Nuit à partir de 96<span class="euro">€</span>
-                    </p>
-                  </div>
+                  <h3 class="card-title">Hôtel Chez Amina</h3>
+                  <p class="card-subtitle">
+                    Nuit à partir de 96<span class="euro">€</span>
+                  </p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -132,12 +134,10 @@
                   alt="Image de la chambre d'hôtel montrant un lit"
                 />
                 <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">Hôtel Les mouettes</h3>
-                    <p class="card-subtitle">
-                      Nuit à partir de 76<span class="euro">€</span>
-                    </p>
-                  </div>
+                  <h3 class="card-title">Hôtel Les mouettes</h3>
+                  <p class="card-subtitle">
+                    Nuit à partir de 76<span class="euro">€</span>
+                  </p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -158,12 +158,10 @@
                   alt="Image de la chambre d'hôtel montrant un lit"
                 />
                 <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">Hôtel de la mer</h3>
-                    <p class="card-subtitle">
-                      Nuit à partir de 46<span class="euro">€</span>
-                    </p>
-                  </div>
+                  <h3 class="card-title">Hôtel de la mer</h3>
+                  <p class="card-subtitle">
+                    Nuit à partir de 46<span class="euro">€</span>
+                  </p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -184,12 +182,10 @@
                   alt="Image de la chambre d'hôtel montrant un lit"
                 />
                 <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">Auberge de la Canebière</h3>
-                    <p class="card-subtitle">
-                      Nuit à partir de 25<span class="euro">€</span>
-                    </p>
-                  </div>
+                  <h3 class="card-title">Auberge de la Canebière</h3>
+                  <p class="card-subtitle">
+                    Nuit à partir de 25<span class="euro">€</span>
+                  </p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -210,12 +206,10 @@
                   alt="Image de la chambre d'hôtel montrant un lit"
                 />
                 <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">Auberge Le Panier</h3>
-                    <p class="card-subtitle">
-                      Nuit à partir de 23<span class="euro">€</span>
-                    </p>
-                  </div>
+                  <h3 class="card-title">Auberge Le Panier</h3>
+                  <p class="card-subtitle">
+                    Nuit à partir de 23<span class="euro">€</span>
+                  </p>
                   <div class="card-rating">
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -365,22 +359,22 @@
         </section>
       </main>
       <footer>
-          <ul>
-            <li class="nav__title">À propos</li>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales</li>
-            <li>Données et confidentialité</li>
-          </ul>
-          <ul>
-            <li class="nav__title">Nos hébergements</li>
-            <li>Chartre qualité</li>
-            <li>Proposer votre hôtel</li>
-          </ul>
-          <ul>
-            <li class="nav__title">Assistance</li>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
-          </ul>
+        <ul>
+          <li class="nav__title">À propos</li>
+          <li>Fonctionnement du site</li>
+          <li>Conditions générales</li>
+          <li>Données et confidentialité</li>
+        </ul>
+        <ul>
+          <li class="nav__title">Nos hébergements</li>
+          <li>Chartre qualité</li>
+          <li>Proposer votre hôtel</li>
+        </ul>
+        <ul>
+          <li class="nav__title">Assistance</li>
+          <li>Centre d'aide</li>
+          <li>Nous contacter</li>
+        </ul>
       </footer>
     </div>
   </body>
