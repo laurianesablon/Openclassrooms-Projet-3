@@ -460,7 +460,7 @@ footer li {
 
   .form {
     margin-top: 29px;
-    justify-content: center;
+    
   }
 
   .btn1 {
@@ -472,13 +472,15 @@ footer li {
     width: 49px;
     align-items: center;
   }
-
+ 
   #ville {
     height: 45px;
     width: 270px;
-    border-left: none;
     z-index: 1;
-    border-right: none;
+  }
+  .ville {
+    justify-content: center;
+
   }
 
   .btn2 {
@@ -494,6 +496,13 @@ footer li {
     right: 24%;
     color: white;
   }
+  .rechercher{
+    width: 49px;
+  }
+
+  .fa-magnifying-glass {
+    display: inline;
+  }
 
   .filtre {
     display: flex;
@@ -508,7 +517,9 @@ footer li {
   }
 
   .filtre .buttons {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -578,4 +589,14 @@ footer li {
   footer .nav__title {
     font-weight: 700;
   }
+}
+
+@media (min-width: 642px){
+  .filtre .buttons {
+  display: flex;
+
+
+  }
+
+
 }
