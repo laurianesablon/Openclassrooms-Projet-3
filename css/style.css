@@ -510,6 +510,10 @@ footer li {
   }
   .rechercher{
     width: 49px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    right: 15px
   }
 
   .fa-magnifying-glass {
