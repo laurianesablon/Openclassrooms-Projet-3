@@ -6,6 +6,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
@@ -230,7 +235,7 @@ h1.section-title {
   width: 64%;
 }
 
-.hebergements-cards .card {
+.hebergements-cards  .card {
   width: 29%;
 }
 .hebergements-cards {
@@ -342,23 +347,31 @@ footer {
   justify-content: space-between;
 }
 
-footer ul {
+.section_footer {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
   padding-left: 0px;
   width: 33%;
+  padding: 7.5px;
+
+}
+
+ul {
+  list-style-type: none;
+
 }
 footer .nav__title {
   font-size: 18px;
   margin-bottom: 7.5px;
   font-weight: 700;
+  padding-left: 40px;
 }
 
 footer li {
   font-size: 16px;
   font-weight: 400;
   padding: 7.5px;
+
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -426,7 +439,6 @@ footer li {
     height: 200px;
   }
   #activite .card {
-    /*padding-bottom: 57px;*/
     height: 270px;
     font-size: 10px;
   }
@@ -579,7 +591,7 @@ footer li {
   }
 
   .hebergements-and-populaires {
-    flex-direction: column-reverse;
+    flex-direction:  -reverse;
     width: 100%;
   }
 
